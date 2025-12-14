@@ -19,7 +19,7 @@ def home():
 
 @app.route("/about")
 def about():
-    list = ['JS', 'Python', 'Flask', 'Django']
+    list = ['JS', 'Python', 'Flask', 'Django', 'HTML', 'CSS', 'SQL', 'NoSQL']
     return render_template("about.html", skills=list)
 
 
