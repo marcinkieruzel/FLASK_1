@@ -38,9 +38,9 @@ def login():
 @app.route("/dashboard")
 def dashboard():
     if 'user' in session:
-        return f"Welcome to the dashboard, {session['user']}!"
+        return f"Welcome to the dashboard, {session['user']}!", 200
     else:
-        return "Please log in to access the dashboard."
+        return "Please log in to access the dashboard.", 
 
 
 
