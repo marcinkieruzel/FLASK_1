@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %} 
+
+<h1 class="container">Registered Users</h1>
+
+{% for name in users %}
+<div class="container">
+  <h2>User: {{ users[name]['name'] }}</h2>
+</div>
+{% endfor %} 
+
+
+
+{% endblock %}
