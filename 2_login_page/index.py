@@ -48,6 +48,7 @@ def register():
     return render_template("register.html", title="Register Page")
 
 
+
 @app.route("/register", methods=["POST"])
 def register_post():
     email = request.form.get("email")
